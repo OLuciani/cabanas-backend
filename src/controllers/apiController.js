@@ -1,8 +1,10 @@
+
+
 //DB connection
 const mongoose = require("mongoose");
 
  mongoose
-  .connect(`mongodb+srv://oscar:shushonguita65@coasterscluster.xxngch4.mongodb.net/consecionaria-automotor?retryWrites=true&w=majority`)
+  .connect(process.env.URL_MONGODB_SECRET)
   .then(() => console.log("Conetado a Base de Datos"));
 
   mongoose.set('strictQuery', true);
