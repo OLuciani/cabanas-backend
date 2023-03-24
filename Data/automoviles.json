@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Fiat 600",
+        "price": 3000,
+        "imageUrl": "Fiat 600.jpg"
+    },
+    {
+        "name": "BMW Z3",
+        "price": 20000,
+        "imageUrl": "VMW Z3.jpg"
+    },
+    {
+        "name": "Ferrari",
+        "price": 150000,
+        "imageUrl": "Ferrari2.jpg"
+    },
+    {
+        "name": "Lamborghini",
+        "price": 230000,
+        "imageUrl": "Lamborghini.jpg"
+    },
+    {
+        "name": "Peugeot RCZ R",
+        "price": 15000,
+        "imageUrl": "Peugeot RCZ R.jpg"
+    },
+    {
+        "name": "Renault 4",
+        "price": 10000,
+        "imageUrl": "Renault 4.jpg"
+    }
+]
