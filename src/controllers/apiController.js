@@ -11,6 +11,7 @@ const mongoose = require("mongoose");
 
 //Model
 const Automovil = require("../models/Automovil.model");
+const Vehiculo = require("../models/Vehiculo.model");
 
 
 
@@ -30,7 +31,24 @@ const controller = {
             .then((car) => res.json(car))
 
         /* res.send("apiDetail"); */
+    },
+    vehiculosList: (req, res) => {
+
+        Vehiculo
+            .find()
+            .then((allVehiculos) => res.json(allVehiculos));
+    },
+    vehiculosDetail: (req, res) => {
+
+        const { car_id} = req.params; //Hay que poner guión bajo porque en la ruta tiene el id asi y sobretodo porque en la base de datos de mongoDB atlas el id se guarda en una propiedad cuyo nombre es así: "_id": seguido del número.
+
+        Vehiculo
+            .findById(car_id)
+            .then((car) => res.json(car))
+
+        /* res.send("apiDetail"); */
     }
+    
 
 }
 
