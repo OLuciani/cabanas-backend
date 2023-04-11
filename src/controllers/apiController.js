@@ -38,7 +38,7 @@ const controller = {
             .find()
             .then((allVehiculos) => res.json(allVehiculos));
     },
-    vehiculosDetail: (req, res) => {
+    vehiculosDetails: (req, res) => {
 
         const { car_id} = req.params; //Hay que poner guión bajo porque en la ruta tiene el id asi y sobretodo porque en la base de datos de mongoDB atlas el id se guarda en una propiedad cuyo nombre es así: "_id": seguido del número.
 

@@ -22,8 +22,3 @@ module.exports = Vehiculo;
 
 
 
-
-
-
-
-
