@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Cabaña 1",
+        "rooms": 2,
+        "description": "En uno de los lugares más lindos del mundo, con una espectacular vista al lago Nahuel Huapi y la Cordillera de los Andes, con cuidados detalles de confort y calidez para que usted disfrute sus vacaciones. Un esmerado servicio al huésped acompaña este imponente lugar, con su arquitectura de montaña. Las cabaña se encuentra a poca distancia del centro de Villa La Angostura. Esperamos que nos elija hoy y mantenga, a partir de su grata estadía, una relación cordial con nuestro equipo y una preferencia por muchos años.",
+        "price": 38000,
+        "services": "Accesibilidad / Acepta mascotas / Caja de seguridad en la habitación / Con vista al cerro / Estacionamiento / Hogar a leña / Parrilla asador / Secador de cabello / Servicio de limpieza / Terraza / TV satelital / Vista al lago / Wi-Fi / Juegos para niños.",
+        "url_image": "/IMG/Cabaña 1/Cabaña1(1)25441-00Gr - Copy.jpg",
+        "url_images": [
+            "/IMG/Cabaña 1/Cabaña1(1)25441-00Gr - Copy.jpg",
+            "/IMG/Cabaña 1/Cabaña1(2)25441-02Gr.jpg",
+            "/IMG/Cabaña 1/Cabaña1(3)25441-03Gr.jpg",
+            "/IMG/Cabaña 1/Cabaña1(4)25441-04Gr.jpg",
+            "/IMG/Cabaña 1/Cabaña1(5)25441-06Gr.jpg",
+            "/IMG/Cabaña 1/Cabaña1(6)25441-07Gr.jpg",
+            "/IMG/Cabaña 1/Cabaña1(7)25441-08Gr.jpg",
+            "/IMG/Cabaña 1/Cabaña1(8)25441-13Gr.jpg"
+        ],
+        "available_days": [
+          "Thu Jun 22 2023",
+          "Fri Jun 23 2023"
+        ]
+    },
+    {
+        "name": "Cabaña 2",
+        "rooms": 2,
+        "description": "Nuestra acogedora cabaña se encuentra emplazada detrás de un cañadón y se accede a ella cruzando por un pintoresco puente de madera. En su frente, prevalece bosque autóctono que brinda una adecuada privacidad a los huéspedes. Se encuentra en el entorno natural que ofrece la zona residencial de Puerto Manzano, y está diseñada y equipada para hospedar a 5 personas. La estadía mínima es de 3 noches.",
+        "price": 32000,
+        "services": "Accesibilidad / Acepta mascotas / Caja de seguridad en la habitación / Con vista al cerro / Estacionamiento / Hogar a leña / Parrilla asador / Secador de cabello / Servicio de limpieza / Terraza / TV satelital / Vista al lago / Wi-Fi / Juegos para niños.",
+        "url_image": "/IMG/Cabaña 2/Cabaña2(1)34895-00Gr.jpg",
+        "url_images": [
+            "/IMG/Cabaña 2/Cabaña2(1)34895-00Gr.jpg",
+            "/IMG/Cabaña 2/Cabaña2(2)34895-01Gr.jpg",
+            "/IMG/Cabaña 2/Cabaña2(3)34895-02Gr.jpg",
+            "/IMG/Cabaña 2/Cabaña2(4)34895-03Gr.jpg",
+            "/IMG/Cabaña 2/Cabaña2(5)34895-07Gr.jpg",
+            "/IMG/Cabaña 2/Cabaña2(6)34895-09Gr.jpg",
+            "/IMG/Cabaña 2/Cabaña2(7)34895-09Gr.jpg",
+            "/IMG/Cabaña 2/Cabaña2(8)34895-13Gr.jpg"
+        ],
+        "available_days": [
+          "Thu Jun 22 2023",
+          "Fri Jun 23 2023"
+        ]
+    },
+    {
+        "name": "Cabaña 3",
+        "rooms": 2,
+        "description": "Esta cabaña enclavada en una de las zonas más bellas de Villa La Angostura ofrece una atencion calida y personalizada llevada a cabo por sus propios dueños. Está totalmente equipada, alejada de los ruidos, donde podrá disfrutar del descanso que usted necesita.",
+        "price": 30000,
+        "services": "Accesibilidad / Acepta mascotas / Caja de seguridad en la habitación / Con vista al cerro / Estacionamiento / Hogar a leña / Parrilla asador / Secador de cabello / Servicio de limpieza / Terraza / TV satelital / Vista al lago / Wi-Fi / Juegos para niños.",
+        "url_image": "/IMG/Cabaña 3/Cabaña3(1)34633-00Gr.jpg",
+        "url_images": [
+            "/IMG/Cabaña 3/Cabaña3(1)34633-00Gr.jpg",
+            "/IMG/Cabaña 3/Cabaña3(2)34633-01Gr.jpg",
+            "/IMG/Cabaña 3/Cabaña3(3)34633-02Gr.jpg",
+            "/IMG/Cabaña 3/Cabaña3(4)34633-03Gr.jpg",
+            "/IMG/Cabaña 3/Cabaña3(5)34633-04Gr.jpg",
+            "/IMG/Cabaña 3/Cabaña3(6)34633-05Gr.jpg",
+            "/IMG/Cabaña 3/Cabaña3(7)34633-06Gr.jpg",
+            "/IMG/Cabaña 3/Cabaña3(8)34633-07Gr.jpg"
+        ],
+        "available_days": [
+          "Thu Jun 22 2023",
+          "Fri Jun 23 2023"
+        ]
+    },
+    {
+        "name": "Cabaña 4",
+        "rooms": 2,
+        "description": "Una cálida atención personalizada que garantiza a nuestros huéspedes una estadía memorable. Totalmente integrado con el paisaje Marinas ofrece impactantes vistas al lago Nahuel Huapi. Localizado en Puerto Manzano, a sólo 7 Km. del centro de Villa La Angostura, uno de los lugares más hermosos de la Patagonia, y a solo 3 km. del acceso al centro de esquí cerro Bayo. Con capacidad para 4/6 personas, cabaña de estilo rústico en tres plantas, donde podrá disfrutar de nuestra vista de privilegio desde cualquier sector de la unidad.",
+        "price": 30000,
+        "services": "Accesibilidad / Acepta mascotas / Caja de seguridad en la habitación / Con vista al cerro / Estacionamiento / Hogar a leña / Parrilla asador / Secador de cabello / Servicio de limpieza / Terraza / TV satelital / Vista al lago / Wi-Fi / Juegos para niños.",
+        "url_image": "/IMG/Cabaña 4/Cabaña4(1)1098-00Gr.jpg",
+        "url_images": [
+            "/IMG/Cabaña 4/Cabaña4(1)1098-00Gr.jpg",
+            "/IMG/Cabaña 4/Cabaña4(2)1098-02Gr.jpg",
+            "/IMG/Cabaña 4/Cabaña4(3)1098-05Gr.jpg",
+            "/IMG/Cabaña 4/Cabaña4(4)1098-06Gr.jpg",
+            "/IMG/Cabaña 4/Cabaña4(5)1098-07Gr.jpg",
+            "/IMG/Cabaña 4/Cabaña4(6)1098-09Gr.jpg",
+            "/IMG/Cabaña 4/Cabaña4(7)1098-01Gr.jpg",
+            "/IMG/Cabaña 4/Cabaña4(8)1098-11Gr.jpg"
+        ],
+        "available_days": [
+          "Thu Jun 22 2023",
+          "Fri Jun 23 2023"
+        ]
+    }
+]

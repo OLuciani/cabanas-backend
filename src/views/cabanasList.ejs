@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/cabañasList.css">
+        <title>Listado de Cabañas</title>
+    </head>
+    <body class="contenedor-cabañas-list">
+        <h1>Listado de Cabañas</h1>
+
+        <% allCabañas.forEach(element => { %>
+            <img class="imagen-cabaña" src="<%= element.url_image %>" alt="foto-<%= element.name %>">
+
+            <br>
+
+            <p><%= element.name %></p>
+
+            <p class="precio">Precio: <%= element.price %></p>
+
+        <% }) %>
+    </body>
+</html> 

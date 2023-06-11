@@ -22,10 +22,10 @@ app.set('view engine', 'ejs');
 
 const mainRoute = require("./routes/mainRoute");
 const apiRoute = require("./routes/apiRoute");
-const productsRoute = require("./routes/productsRoute")
+const cabañasRoute = require("./routes/cabanasRoute")
 
 app.listen(process.env.PORT || 5005, () => console.log("Server running"));
 
 app.use("/", mainRoute);
 app.use("/api", apiRoute);
-app.use("/products", productsRoute);
+app.use("/cabanas", cabañasRoute);

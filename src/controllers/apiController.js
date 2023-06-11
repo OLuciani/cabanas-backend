@@ -10,27 +10,29 @@ const mongoose = require("mongoose");
   mongoose.set('strictQuery', true);
 
 //Model
-const Automovil = require("../models/Automovil.model");
-const Vehiculo = require("../models/Vehiculo.model");
+const Cabana = require("../models/Cabana.model");
+
+/* const Automovil = require("../models/Automovil.model");
+const Vehiculo = require("../models/Vehiculo.model"); */
 
 
 
 const controller = {
     list: (req, res) => {
 
-        Automovil
+        Cabana
             .find()
-            .then((allAutomoviles) => res.json(allAutomoviles));
-    },
+            .then((allCabanas) => res.json(allCabanas));
+    }/* ,
     detail: (req, res) => {
 
-        const { car_id} = req.params; //Hay que poner guión bajo porque en la ruta tiene el id asi y sobretodo porque en la base de datos de mongoDB atlas el id se guarda en una propiedad cuyo nombre es así: "_id": seguido del número.
+        const { car_id} = req.params; 
 
         Automovil
             .findById(car_id)
             .then((car) => res.json(car))
 
-        /* res.send("apiDetail"); */
+      
     },
     vehiculosList: (req, res) => {
 
@@ -40,14 +42,13 @@ const controller = {
     },
     vehiculosDetails: (req, res) => {
 
-        const { car_id} = req.params; //Hay que poner guión bajo porque en la ruta tiene el id asi y sobretodo porque en la base de datos de mongoDB atlas el id se guarda en una propiedad cuyo nombre es así: "_id": seguido del número.
+        const { car_id} = req.params; 
 
         Vehiculo
             .findById(car_id)
             .then((car) => res.json(car))
 
-        /* res.send("apiDetail"); */
-    }
+    }  */
     
 
 }

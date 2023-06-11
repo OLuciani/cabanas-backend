@@ -3,9 +3,8 @@ const router = express.Router();
 
 const apiController = require("../controllers/apiController");
 
+/* router.get("/apiList", apiController.list); */  /* esta es la linea de codigo que tenia */
 router.get("/list", apiController.list);
-router.get("/details/:car_id", apiController.detail); // El id va con el guión bajo adelante porque asi se escribe la propiedad en la que lo guarda la base de datos mongoDB "_id": seguido de el numero que le pone automáticamente mongoDB.
-router.get("/vehiculosList", apiController.vehiculosList);
-router.get("/vehiculosDetails/:car_id", apiController.vehiculosDetails);
+
 
 module.exports = router;
