@@ -1,0 +1,10 @@
+{
+    "service": "gmail",
+    "auth": {
+        "type": "OAuth2",
+        "user": "lucianioscar1@gmail.com",
+        "clientId": "1081727778420-68km8jqhjpru5jmgpjrm529743t3i0t4.apps.googleusercontent.com",
+        "clientSecret": "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",
+        "refreshToken": "1//04cqd0pjPeRikCgYIARAAGAQSNwF-L9IrOSEK9ckm0AZfJovx6oEY7Xasf4UzM2Zpqx5Gkd395TaCVu1eTeLpDyqqPdybfPs1K_0"
+    }
+}
