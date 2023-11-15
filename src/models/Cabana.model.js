@@ -5,9 +5,9 @@ const cabanaSchema = mongoose.Schema({
     rooms: Number,
     price: Number, 
     description: String,
-    services: String, //Esta propiedad es nueva.
+    services: String,
     url_image: String,
-    url_images: Array, //Esta propiedad es nueva.
+    url_images: Array,
     available_days: Array
 });
 

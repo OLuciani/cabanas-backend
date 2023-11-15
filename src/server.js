@@ -20,11 +20,21 @@ app.use(methodOverride('_method'));
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
+// Middleware personalizado para agregar encabezados CORS a las respuestas del servidor
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*"); // Permite solicitudes desde cualquier origen
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+    next();
+  });
+
 const mainRoute = require("./routes/mainRoute");
 const apiRoute = require("./routes/apiRoute");
 const cabañasRoute = require("./routes/cabanasRoute")
 
-app.listen(process.env.PORT || 5005, () => console.log("Server running"));
+app.listen(/* process.env.PORT ||  */5005, () => console.log("Server running"));
 
 app.use("/", mainRoute);
 app.use("/api", apiRoute);
