@@ -30,7 +30,7 @@ const oauth2Client = new OAuth2(
 // Configuración de las credenciales OAuth2 utilizando un token de actualización
 oauth2Client.setCredentials({
   refresh_token:
-    "1//04wD48F4AF9VnCgYIARAAGAQSNwF-L9IrnmoFc4NuwdFiHzblMSU9eP9X8PDW6n6tpX_EigVumJ3qxOC66nH6i6EsA2qQayH0inA",
+    "1//04wiP4X0VvlJdCgYIARAAGAQSNwF-L9Ir_zY4W68fVJu6FktAanA-Xmilrp2dxaL7j1AyzjjU8k2wdQCGxMUxRCLuGY9s9R94M44",
 });
 
 // Función para obtener un nuevo token de acceso y evitar que expire
@@ -57,7 +57,7 @@ const transporter = nodemailer.createTransport({
       "1081727778420-68km8jqhjpru5jmgpjrm529743t3i0t4.apps.googleusercontent.com",
     clientSecret: "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",
     refreshToken:
-      "1//04wD48F4AF9VnCgYIARAAGAQSNwF-L9IrnmoFc4NuwdFiHzblMSU9eP9X8PDW6n6tpX_EigVumJ3qxOC66nH6i6EsA2qQayH0inA",
+      "1//04wiP4X0VvlJdCgYIARAAGAQSNwF-L9Ir_zY4W68fVJu6FktAanA-Xmilrp2dxaL7j1AyzjjU8k2wdQCGxMUxRCLuGY9s9R94M44",
     accessToken: getAccessToken(),
   },
 });
@@ -329,7 +329,7 @@ const controller = {
         "1081727778420-68km8jqhjpru5jmgpjrm529743t3i0t4.apps.googleusercontent.com",
       clientSecret: "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",
       refreshToken:
-        "1//04wD48F4AF9VnCgYIARAAGAQSNwF-L9IrnmoFc4NuwdFiHzblMSU9eP9X8PDW6n6tpX_EigVumJ3qxOC66nH6i6EsA2qQayH0inA",
+        "1//04wiP4X0VvlJdCgYIARAAGAQSNwF-L9Ir_zY4W68fVJu6FktAanA-Xmilrp2dxaL7j1AyzjjU8k2wdQCGxMUxRCLuGY9s9R94M44",
       accessToken: accessToken,
     });
 
