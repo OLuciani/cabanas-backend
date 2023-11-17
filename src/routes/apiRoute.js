@@ -28,6 +28,28 @@ const upload = multer({ storage: storage });
 
 
 // Middleware para proteger rutas
+/* const authenticateToken = (req, res, next) => {
+  console.log('Middleware authenticateToken llamado.');
+
+  const token = req.headers.authorization;
+  console.log("Valor recibido del token:", token);
+
+  if (!token) {
+    return res.status(401).json({ message: 'Token no proporcionado' });
+  }
+
+  jwt.verify(token.replace("Bearer ", ""), 'mi_secreto_secreto', (err, user) => {
+
+    if (err) {
+      return res.status(403).json({ message: 'Token inválido' });
+    }
+
+    // Agrega el usuario decodificado al objeto de solicitud para que esté disponible en los controladores
+    req.user = user;
+    next();
+  });
+}; */
+
 const authenticateToken = (req, res, next) => {
   console.log('Middleware authenticateToken llamado.');
 
@@ -38,7 +60,7 @@ const authenticateToken = (req, res, next) => {
     return res.status(401).json({ message: 'Token no proporcionado' });
   }
 
-  jwt.verify(token.replace("Bearer", ""), 'mi_secreto_secreto', (err, user) => {
+  jwt.verify(token.replace("Bearer ", ""), 'mi_secreto_secreto', (err, user) => {
     if (err) {
       return res.status(403).json({ message: 'Token inválido' });
     }
@@ -48,6 +70,8 @@ const authenticateToken = (req, res, next) => {
     next();
   });
 };
+
+
 
 
 // Rutas para obtener la lista de cabañas.
