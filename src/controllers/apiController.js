@@ -30,7 +30,7 @@ const oauth2Client = new OAuth2(
 // Configuración de las credenciales OAuth2 utilizando un token de actualización
 oauth2Client.setCredentials({
   refresh_token:
-    "1//04wiP4X0VvlJdCgYIARAAGAQSNwF-L9Ir_zY4W68fVJu6FktAanA-Xmilrp2dxaL7j1AyzjjU8k2wdQCGxMUxRCLuGY9s9R94M44",
+    "1//044CkM8qrby_TCgYIARAAGAQSNwF-L9Irg_hJWbsKnBiVVTF9H6CoNIsYsMEGQvV9Ust5djXXGK-XPELamcbjlly82RJRCJOYl8s",
 });
 
 // Función para obtener un nuevo token de acceso y evitar que expire
@@ -46,6 +46,18 @@ async function getAccessToken() {
     });
   });
 }
+/* async function getAccessToken() {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const token = await oauth2Client.getAccessToken();
+      console.log("Token de acceso renovado exitosamente:", token);
+      resolve(token);
+    } catch (error) {
+      console.error("Error al obtener el token de acceso:", error);
+      reject(error);
+    }
+  });
+} */
 
 // Creación del transporte de correo electrónico utilizando nodemailer
 const transporter = nodemailer.createTransport({
@@ -57,7 +69,7 @@ const transporter = nodemailer.createTransport({
       "1081727778420-68km8jqhjpru5jmgpjrm529743t3i0t4.apps.googleusercontent.com",
     clientSecret: "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",
     refreshToken:
-      "1//04wiP4X0VvlJdCgYIARAAGAQSNwF-L9Ir_zY4W68fVJu6FktAanA-Xmilrp2dxaL7j1AyzjjU8k2wdQCGxMUxRCLuGY9s9R94M44",
+      "1//044CkM8qrby_TCgYIARAAGAQSNwF-L9Irg_hJWbsKnBiVVTF9H6CoNIsYsMEGQvV9Ust5djXXGK-XPELamcbjlly82RJRCJOYl8s",
     accessToken: getAccessToken(),
   },
 });
@@ -329,7 +341,7 @@ const controller = {
         "1081727778420-68km8jqhjpru5jmgpjrm529743t3i0t4.apps.googleusercontent.com",
       clientSecret: "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",
       refreshToken:
-        "1//04wiP4X0VvlJdCgYIARAAGAQSNwF-L9Ir_zY4W68fVJu6FktAanA-Xmilrp2dxaL7j1AyzjjU8k2wdQCGxMUxRCLuGY9s9R94M44",
+        "1//044CkM8qrby_TCgYIARAAGAQSNwF-L9Irg_hJWbsKnBiVVTF9H6CoNIsYsMEGQvV9Ust5djXXGK-XPELamcbjlly82RJRCJOYl8s",
       accessToken: accessToken,
     });
 
@@ -354,6 +366,50 @@ const controller = {
       }
     });
   },
+  /* send_mail: async (req, res) => {
+    // Extraigo los datos del formulario del componente Reservar.js que van en el mail con la confirmación y detalles de la reserva al cliente
+    const { to, subject, content } = req.body;
+
+    try {
+      // Obtén un nuevo token de acceso antes de responder
+      const accessToken = await getAccessToken();
+      console.log("Token de acceso utilizado para enviar correo electrónico:", accessToken);
+
+      // Configuración de autenticación OAuth2 para el transporte de correos electrónicos
+      transporter.set("auth", {
+        type: "OAuth2",
+        user: "lucianioscar1@gmail.com",
+        clientId:
+          "1081727778420-68km8jqhjpru5jmgpjrm529743t3i0t4.apps.googleusercontent.com",
+        clientSecret: "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",
+        refreshToken:
+          "1//04Yi_npGFY6iICgYIARAAGAQSNwF-L9IrcC9hbZPbyczlt-1ZF9yB1J_Q_dzkKYJVEsWiea8N8fU0D6Pno9SOHc5fRQrdxiQbeak",
+        accessToken: accessToken,
+      });
+
+      // Configuro las opciones del correo electrónico
+      const mailOptions = {
+        from: "lucianioscar1@gmail.com",
+        to: to,
+        subject: subject,
+        text: content,
+      };
+
+      // Envío el correo electrónico
+      transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          console.error("Error al enviar el correo electrónico:", error);
+          res.status(500).json({ error: "Error al enviar el correo electrónico" });
+        } else {
+          console.log("Correo electrónico enviado con éxito:", info.response);
+          res.json({ message: "Correo electrónico enviado correctamente" });
+        }
+      });
+    } catch (error) {
+      console.error("Error al enviar el correo electrónico (capturado en el bloque catch):", error);
+      res.status(500).json({ error: "Error al enviar el correo electrónico" });
+    }
+  }, */
   register_user_list: (req, res) => {
     User.find().then((allUsers) =>
       res.json(allUsers)

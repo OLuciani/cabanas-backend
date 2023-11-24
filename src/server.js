@@ -24,7 +24,8 @@ const mainRoute = require("./routes/mainRoute");
 const apiRoute = require("./routes/apiRoute");
 const cabañasRoute = require("./routes/cabanasRoute")
 
-app.listen(process.env.PORT_SECRET || 5005, () => console.log("Server running"));
+//app.listen(process.env.PORT_SECRET || 5005, () => console.log("Server running"));
+app.listen(5005, () => console.log("Server running"));
 
 app.use("/", mainRoute);
 app.use("/api", apiRoute);
